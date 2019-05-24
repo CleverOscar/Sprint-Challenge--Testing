@@ -3,11 +3,7 @@ const server = require('./server');
 const db = require('../data/dbConfig');
 
 describe('server.js', () => {
-
-  it('should set the testing environment', () => {
-    expect(process.env.DB_ENV).toBe('testing');
-  })
-
+  
   describe('endpoints', () => {
     describe('GET /', () => {
       it('should return 200 ok using async', async () => {
